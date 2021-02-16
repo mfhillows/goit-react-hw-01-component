@@ -1,0 +1,15 @@
+.profile {
+  background-color: aqua;
+  width: 160px;
+  height: 500px;
+}
+
+.avatar {
+  width: 120px;
+  height: 150px;
+}
+
+.name .tag .location {
+  font-size: small;
+  font-weight: 700;
+}

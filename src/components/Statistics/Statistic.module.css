@@ -1,0 +1,25 @@
+.statistic {
+  width: 600px;
+  background-color: blueviolet;
+  text-align: center;
+}
+.statlist {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.label {
+  margin: 3px;
+}
+
+.percentage {
+  margin: 3px;
+}

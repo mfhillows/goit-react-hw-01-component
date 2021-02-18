@@ -3,14 +3,14 @@ import s from "./Statistic.module.css";
 
 export default function Statistic({ title = "", stats }) {
   return (
-    <section class={s.statistic}>
-      <h2 class="title">{title}</h2>
+    <section className={s.statistic}>
+      <h2 className="title">{title}</h2>
 
-      <ul class={s.statlist}>
+      <ul className={s.statlist}>
         {stats.map((stat) => (
-          <li class={s.item}>
-            <span class={s.label}>{stat.label}</span>
-            <span class={s.percentage}>{stat.percentage}%</span>
+          <li className={s.item} key={stat.id}>
+            <span className={s.label}>{stat.label}</span>
+            <span className={s.percentage}>{stat.percentage}%</span>
           </li>
         ))}
       </ul>

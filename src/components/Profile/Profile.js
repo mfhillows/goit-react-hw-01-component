@@ -3,26 +3,26 @@ import s from "./Profile.module.css";
 
 export default function Profile({ name, tag, location, avatar, stats }) {
   return (
-    <div class={s.profile}>
-      <div class="description">
-        <img src={avatar} alt="Аватар пользователя" class={s.avatar} />
-        <p class={s.name}>{name}</p>
-        <p class={s.tag}>@{tag}</p>
-        <p class={s.location}>{location}</p>
+    <div className={s.profile}>
+      <div className="description">
+        <img src={avatar} alt="Аватар пользователя" className={s.avatar} />
+        <p className={s.name}>{name}</p>
+        <p className={s.tag}>@{tag}</p>
+        <p className={s.location}>{location}</p>
       </div>
 
-      <ul class="stats">
+      <ul className="stats">
         <li>
-          <span class="label">Followers</span>
-          <span class="quantity">{stats.followers}</span>
+          <span className="label">Followers</span>
+          <span className="quantity">{stats.followers}</span>
         </li>
         <li>
-          <span class="label">Views</span>
-          <span class="quantity">{stats.views}</span>
+          <span className="label">Views</span>
+          <span className="quantity">{stats.views}</span>
         </li>
         <li>
-          <span class="label">Likes</span>
-          <span class="quantity">{stats.likes}</span>
+          <span className="label">Likes</span>
+          <span className="quantity">{stats.likes}</span>
         </li>
       </ul>
     </div>
@@ -34,5 +34,5 @@ Profile.propTypes = {
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
-  stats: PropTypes.number.isRequired,
+  stats: PropTypes.object.isRequired,
 };

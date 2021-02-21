@@ -1,3 +1,4 @@
 .friendList {
-  list-style: none;
+  display: block;
+  margin-bottom: 50px;
 }

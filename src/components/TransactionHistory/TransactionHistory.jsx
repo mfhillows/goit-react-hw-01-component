@@ -21,7 +21,7 @@ export default function TransactionHistory({ items }) {
   </tbody>
 </table>)
 }
-// {index%2==0 && style={{ backgroundColor: '#2196f3' }}}
+
 TransactionHistory.propTypes = {
   items: PropTypes.array.isRequired,
 };

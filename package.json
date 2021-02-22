@@ -2,7 +2,7 @@
   "name": "goit-react-hw-01-component",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/mfhillows.github.io/goit-react-hw-01-component",
+  "homepage": "https://mfhillows.github.io/goit-react-hw-01-component",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
@@ -19,8 +19,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "clean" : "gh-pages-clean",
     "predeploy": "npm run build",
-     "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
